@@ -35,11 +35,11 @@ public class ImmutableTest {
 			
 		@Test
 		public void testGet_ImmutableQueue() {
-			n=n.put(5);
+			n=n.put(7);
 			n=n.put(9);
 			AbstractIBag< Integer> p=new ImmutableStack<Integer>();
 			p=n.get();
-			assertEquals("[5]",p.toString());// this test fail since p is the new queue without 5.hence [9])
+			assertEquals("[7]",p.toString());// this test fail since p is the new queue without 7.hence [9])
 		}
 
 	    //Exception test
