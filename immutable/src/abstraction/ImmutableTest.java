@@ -18,7 +18,7 @@ public class ImmutableTest {
 		m.choose();	 	
 		}
 		
-		//test Choose() in Bag
+		//test Choose() in Bag Bag
 		@Test
 		public void testChoose_ImmutableBag() {
 			m=   m.put(6);
