@@ -22,7 +22,7 @@ public class ImmutableTest {
 		@Test
 		public void testChoose_ImmutableBag() {
 			m=   m.put(6);
-			m=   m.put("o");
+			m=   m.put("t");
 			List<String> l=new ArrayList<String>();
 			l.add("agag");
 			l.add("MI5");
