@@ -68,4 +68,15 @@ public class ImmutableTest {
 		assertEquals("3",l.choose());// will fail because choose
 	}
 
+       //test choose() of immutable stack again and again
+        @Test
+        public void testChoose_ImmutableStack2() {
+                l=l.put("6");
+                l=l.put("3");
+                l=l.put("9");
+                assertEquals("3",l.choose());// will fail because choose
+        }
+
+
+
 }
