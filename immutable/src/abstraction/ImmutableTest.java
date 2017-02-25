@@ -18,11 +18,11 @@ public class ImmutableTest {
 		m.choose();	 	
 		}
 		
-		//test Choose() in Bag
+		//test Choose() in Bag Bag
 		@Test
 		public void testChoose_ImmutableBag() {
 			m=   m.put(6);
-			m=   m.put("o");
+			m=   m.put("t");
 			List<String> l=new ArrayList<String>();
 			l.add("agag");
 			l.add("MI5");
@@ -35,11 +35,13 @@ public class ImmutableTest {
 			
 		@Test
 		public void testGet_ImmutableQueue() {
-			n=n.put(5);
+			n=n.put(7);
 			n=n.put(9);
 			AbstractIBag< Integer> p=new ImmutableStack<Integer>();
 			p=n.get();
+
 			assertEquals("[6]",p.toString());// this test fail since p is the new queue without 6.hence [9])
+
 		}
 
 	    //Exception test
@@ -65,5 +67,15 @@ public class ImmutableTest {
 		l=l.put("9");
 		assertEquals("3",l.choose());// will fail because choose
 	}
+
+
+       //test choose() of immutable stack again
+        @Test
+        public void testChoose_ImmutableStack2() {
+                l=l.put("4");
+                l=l.put("3");
+                l=l.put("10");
+                assertEquals("3",l.choose());// will fail because choose
+        }
 
 }
